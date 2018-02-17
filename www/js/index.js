@@ -17,8 +17,9 @@
  * under the License.
  */
 
-urlBrow = 'https://www.google.com';
-//urlBrow = 'http://fazerja.com.br/site/index.php?app=s';
+// urlBrow = 'https://www.google.com';
+//
+urlBrow = 'http://fazerja.com.br/site/index.php?app=s';
 
 var app = {
     // Application Constructor
@@ -112,10 +113,19 @@ alert('conectado a internet com:' + conn );
 function teste7(){
 
 alert('teste7');
-alert('urlBrow' + urlBrow );
+alert('urlBrow ' + urlBrow );
 ifrBrowser.location.href =  urlBrow;
 
 }   
+
+
+function teste7c(){
+
+alert('teste7c');
+alert('urlBrow ' + urlBrow );
+location.href =  urlBrow;
+
+}  
 
 
 function teste8(){
