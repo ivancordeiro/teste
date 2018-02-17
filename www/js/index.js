@@ -65,3 +65,39 @@ cordova.InAppBrowser.open(encodeURI('http://fazerja.com.br/site/index.php?app=s'
 cordova.InAppBrowser.open(encodeURI('http://www.fazerja.com.br/site/index.php?app=s'), '_system', 'location=no,hidden=no');
 	   
     }
+
+
+ function teste6() {
+
+window.open( 'http://www.fazerja.com.br/site/index.php?app=s' , '_self', 'location=no,hidden=no');
+	   
+    }
+
+
+
+
+
+
+
+
+function net(){
+
+var conn = navigator.connection.type;
+
+if( conn == 'none' || conn == 'NONE' ){ //conn
+alert('O aplicativo nao detectou conexao com internet.');
+} else {
+alert('conectado a internet com:' + conn );
+}
+
+}
+	
+
+
+
+function teste7(){
+
+var urlBrow = 'http://fazerja.com.br/site/index.php?app=s';
+ifrBrowser.location.href =  urlBrow;
+
+}   
