@@ -34,7 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-		app.inapp();
+        app.inapp();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -46,16 +46,22 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-		
-			
-    },
-	
+    }
+
+
+
 	inapp: function() {
 
-		//cordova.InAppBrowser.open(encodeURI('http://sisfit.net.br/mobile'), '_system', 'location=no');
-
-cordova.InAppBrowser.open(encodeURI('http://fazerja.com.br/site/index.php?app=s'), '_self', 'location=no,hidden=no');
+cordova.InAppBrowser.open(encodeURI('http://fazerja.com.br/site/index.php?app=s'), '_system', 'location=no,hidden=no');
 	   
     }
-	
 };
+
+
+
+
+ function teste1() {
+
+cordova.InAppBrowser.open(encodeURI('http://www.fazerja.com.br/site/index.php?app=s'), '_system', 'location=no,hidden=no');
+	   
+    }
