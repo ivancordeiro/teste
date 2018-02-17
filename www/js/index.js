@@ -50,7 +50,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-    }
+    },
 
 
 
@@ -59,6 +59,9 @@ var app = {
 cordova.InAppBrowser.open(encodeURI('http://fazerja.com.br/site/index.php?app=s'), '_system', 'location=no,hidden=no');
 	   
     }
+
+
+
 };
 
 
@@ -67,6 +70,7 @@ cordova.InAppBrowser.open(encodeURI('http://fazerja.com.br/site/index.php?app=s'
  function teste1() {
 
 alert('teste1');
+alert('urlBrow' + urlBrow );
 
 cordova.InAppBrowser.open(encodeURI(urlBrow), '_system', 'location=no,hidden=no');
 	   
