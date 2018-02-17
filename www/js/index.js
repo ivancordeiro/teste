@@ -16,6 +16,10 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+urlBrow = 'https://www.google.com';
+//urlBrow = 'http://fazerja.com.br/site/index.php?app=s';
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -62,14 +66,16 @@ cordova.InAppBrowser.open(encodeURI('http://fazerja.com.br/site/index.php?app=s'
 
  function teste1() {
 
-cordova.InAppBrowser.open(encodeURI('http://www.fazerja.com.br/site/index.php?app=s'), '_system', 'location=no,hidden=no');
+alert('teste1');
+
+cordova.InAppBrowser.open(encodeURI(urlBrow), '_system', 'location=no,hidden=no');
 	   
     }
 
 
  function teste6() {
-
-window.open( 'http://www.fazerja.com.br/site/index.php?app=s' , '_self', 'location=no,hidden=no');
+alert('teste6');
+window.open( urlBrow , '_self', 'location=no,hidden=no');
 	   
     }
 
@@ -81,6 +87,8 @@ window.open( 'http://www.fazerja.com.br/site/index.php?app=s' , '_self', 'locati
 
 
 function net(){
+
+alert('net');
 
 var conn = navigator.connection.type;
 
@@ -95,9 +103,50 @@ alert('conectado a internet com:' + conn );
 
 
 
+
+
 function teste7(){
 
-var urlBrow = 'http://fazerja.com.br/site/index.php?app=s';
+alert('teste7');
+alert('urlBrow' + urlBrow );
 ifrBrowser.location.href =  urlBrow;
 
 }   
+
+
+function teste8(){
+alert('teste8');
+alert('urlBrow' + urlBrow );
+window.open(urlBrow, '_blank');
+}
+
+function teste9(){
+alert('teste9');
+alert('urlBrow' + urlBrow );
+window.open(urlBrow, '_system');
+}
+
+function teste10(){
+alert('teste10');
+alert('urlBrow' + urlBrow );
+window.open(urlBrow, '_self');
+}
+
+
+function teste8b(){
+alert('teste8b');
+alert('urlBrow' + urlBrow );
+cordova.InAppBrowser.open(urlBrow, '_blank');
+}
+
+function teste9b(){
+alert('teste9b');
+alert('urlBrow' + urlBrow );
+cordova.InAppBrowser.open(urlBrow, '_system');
+}
+
+function teste10b(){
+alert('teste10b');
+alert('urlBrow' + urlBrow );
+cordova.InAppBrowser.open(urlBrow, '_self');
+}
