@@ -19,7 +19,7 @@
 
 // urlBrow = 'https://www.google.com';
 //
-urlBrow = 'http://fazerja.com.br/site/index.php?app=s';
+urlBrow = 'https://fazerja.com.br/site/index.php?app=s';
 
 var app = {
     // Application Constructor
