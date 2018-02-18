@@ -67,9 +67,9 @@ navigator.app.exitApp();
 
 var conn = navigator.connection.type;
 
-if( conn == 'none' || conn == 'NONE' ){ //2
-alert('O aplicativo nao detectou conexao com internet!');
-} else {//2
+///////////////////// if( conn == 'none' || conn == 'NONE' ){ //2
+///////////////////// alert('O aplicativo nao detectou conexao com internet!');
+///////////////////// } else {//2
 
 // alert('conectado a internet com:' + conn );
 
@@ -83,10 +83,10 @@ document.getElementById("ifrBrowser").style.height = altTela - 70 +"px";
 }//3
 
 //alert( 'urlBrow: ' + urlBrow );
-ifrBrowser.location.href =  urlBrow;
+ifrBrowser.location.href =  urlBrow; 
 
 
-}//2
+///////////////////// }//2
 
 	   
     }//1
