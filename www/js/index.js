@@ -38,7 +38,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        app.carregar();
+        // app.carregar();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -54,14 +54,14 @@ var app = {
 
 fechar: function() {
 
-alert('fechar');
+//alert('fechar');
 navigator.app.exitApp();
 
 },
 
 	carregar: function() {//1
 
-alert('carregar');
+//alert('carregar');
 
 //cordova.InAppBrowser.open(encodeURI(urlBrow), '_system', 'location=no,hidden=no');
 
@@ -73,13 +73,16 @@ alert('O aplicativo nao detectou conexao com internet!');
 
 // alert('conectado a internet com:' + conn );
 
+document.getElementById("boasvindas").style.display = "none";
+document.getElementById("cabecalho").style.display = "block";
+
 var altTela = parseInt( screen.height ) ;
 if( altTela != '' && altTela != 'undefined'  && altTela != 0 ){//3
 //alert(altTela);
 document.getElementById("ifrBrowser").style.height = altTela - 70 +"px";
 }//3
 
-alert( 'urlBrow: ' + urlBrow );
+//alert( 'urlBrow: ' + urlBrow );
 ifrBrowser.location.href =  urlBrow;
 
 
