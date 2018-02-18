@@ -84,14 +84,17 @@
 <allow-navigation href="http://fazerja.com.br/*" />
 <allow-navigation href="https://fazerja.com.br/*" />
 <allow-navigation href="https://ws.pagseguro.uol.com.br/*" />
+<allow-navigation href="https://pagseguro.uol.com.br/*" />
 
 <allow-intent href="http://fazerja.com.br/*" />
 <allow-intent href="https://fazerja.com.br/*" />
 <allow-intent href="https://ws.pagseguro.uol.com.br/*" />
+<allow-intent href="https://pagseguro.uol.com.br/*" />
 
 <access origin="http://fazerja.com.br" />
 <access origin="https://fazerja.com.br" />
 <access origin="https://ws.pagseguro.uol.com.br" />
+<access origin="https://pagseguro.uol.com.br" />
   
   <access origin="*" />
     <allow-intent href="http://*/*" />
