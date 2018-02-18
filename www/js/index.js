@@ -17,9 +17,8 @@
  * under the License.
  */
 
-// urlBrow = 'https://www.google.com';
-//
-urlBrow = 'https://fazerja.com.br/site/index.php?app=s';
+
+urlBrow = 'http://fazerja.com.br/site/index.php?app=s&os=i';
 
 var app = {
     // Application Constructor
@@ -39,7 +38,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        app.inapp();
+        app.carregar();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -53,13 +52,41 @@ var app = {
         console.log('Received Event: ' + id);
     },
 
+fechar: function() {
+
+alert('fechar');
+navigator.app.exitApp();
+
+},
+
+	carregar: function() {//1
+
+alert('carregar');
+
+//cordova.InAppBrowser.open(encodeURI(urlBrow), '_system', 'location=no,hidden=no');
+
+var conn = navigator.connection.type;
+
+if( conn == 'none' || conn == 'NONE' ){ //2
+alert('O aplicativo nao detectou conexao com internet!');
+} else {//2
+
+// alert('conectado a internet com:' + conn );
+
+var altTela = parseInt( screen.height ) ;
+if( altTela != '' && altTela != 'undefined'  && altTela != 0 ){//3
+//alert(altTela);
+document.getElementById("ifrBrowser").style.height = altTela - 70 +"px";
+}//3
+
+alert( 'urlBrow: ' + urlBrow );
+ifrBrowser.location.href =  urlBrow;
 
 
-	inapp: function() {
+}//2
 
-cordova.InAppBrowser.open(encodeURI('http://fazerja.com.br/site/index.php?app=s'), '_system', 'location=no,hidden=no');
 	   
-    }
+    }//1
 
 
 
@@ -68,99 +95,6 @@ cordova.InAppBrowser.open(encodeURI('http://fazerja.com.br/site/index.php?app=s'
 
 
 
- function teste1() {
-
-alert('teste1');
-alert('urlBrow' + urlBrow );
-
-cordova.InAppBrowser.open(encodeURI(urlBrow), '_system', 'location=no,hidden=no');
-	   
-    }
-
-
- function teste6() {
-alert('teste6');
-window.open( urlBrow , '_self', 'location=no,hidden=no');
-	   
-    }
 
 
 
-
-
-
-
-
-function net(){
-
-alert('net');
-
-var conn = navigator.connection.type;
-
-if( conn == 'none' || conn == 'NONE' ){ //conn
-alert('O aplicativo nao detectou conexao com internet.');
-} else {
-alert('conectado a internet com:' + conn );
-}
-
-}
-	
-
-
-
-
-
-function teste7(){
-
-alert('teste7');
-alert('urlBrow ' + urlBrow );
-ifrBrowser.location.href =  urlBrow;
-
-}   
-
-
-function teste7c(){
-
-alert('teste7c');
-alert('urlBrow ' + urlBrow );
-location.href =  urlBrow;
-
-}  
-
-
-function teste8(){
-alert('teste8');
-alert('urlBrow' + urlBrow );
-window.open(urlBrow, '_blank');
-}
-
-function teste9(){
-alert('teste9');
-alert('urlBrow' + urlBrow );
-window.open(urlBrow, '_system');
-}
-
-function teste10(){
-alert('teste10');
-alert('urlBrow' + urlBrow );
-window.open(urlBrow, '_self');
-}
-
-
-function teste8b(){
-alert('teste8b');
-alert('urlBrow' + urlBrow );
-cordova.InAppBrowser.open(urlBrow, '_blank');
-}
-
-function teste9b(){
-alert('teste9b');
-alert('urlBrow' + urlBrow );
-cordova.InAppBrowser.open(urlBrow, '_system');
-}
-
-function teste10b(){
-alert('teste10b');
-alert('urlBrow' + urlBrow );
-cordova.InAppBrowser.open(urlBrow, '_self');
-}

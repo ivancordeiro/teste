@@ -1,34 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="br.com.testeivan" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>teste</name>
+   <name>FazerJa</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+         Marketplace de profissionais e serviços autônomos (free lances)
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+ <author email="ivancordeiro@yahoo.com.br" href="http://ivanprogramador.com.br">
+        Ivan Programador
     </author>
     <content src="index.html" />
+
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
-    <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
-    <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" />
-    <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0" />
+
+
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2" />
-    <plugin name="cordova-plugin-contacts" source="npm" spec="~2.0.1" />
     <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
     <plugin name="cordova-plugin-device-motion" source="npm" spec="~1.2.0" />
     <plugin name="cordova-plugin-device-orientation" source="npm" spec="~1.0.2" />
     <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.0" />
-    <plugin name="cordova-plugin-file" source="npm" spec="~4.1.1" />
-    <plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.5.0" />
     <plugin name="cordova-plugin-geolocation" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-globalization" source="npm" spec="~1.0.3" />
-    <plugin name="cordova-plugin-media" source="npm" spec="~2.2.0" />
     <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
-    <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
-
 
 
     <plugin name="cordova-plugin-inappbrowser" spec="~2.0.2" />
@@ -55,6 +49,7 @@
         <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
     </platform>
+
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
         <icon height="114" platform="ios" src="www/res/icon/ios/icon@2x.png" width="114" />
@@ -84,11 +79,6 @@
         <splash height="480" platform="ios" src="www/res/screen/ios/Default~iphone.png" width="320" />
     </platform>
 
-    <platform name="wp8">
-        <icon height="99" platform="wp8" src="www/res/icon/wp8/ApplicationIcon.png" width="99" />
-        <icon height="159" platform="wp8" src="www/res/icon/wp8/Background.png" width="159" />
-        <splash height="1280" platform="wp8" src="www/res/screen/wp8/screen-portrait.jpg" width="768" />
-    </platform>
 
 
 <allow-navigation href="http://fazerja.com.br/*" />
@@ -114,6 +104,7 @@
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
+
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
